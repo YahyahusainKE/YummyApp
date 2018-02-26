@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+         <meta name ="viewport" content = 'width=device-width, initial-1 =1'>
+              <link href = 'main.css' rel = 'stylesheet' type = 'text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  </head>
+  <body>
+
+      <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <a class="navbar-brand" style="color:#ffa500;" href="#">Yummy Recipes</a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html" >Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about"  >About</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="index.html" >Login</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+        <div class="text">
+            <span class="border">
+                Yummy Recipes
+            </span>
+        </div>
+
+        <div class = 'col-sm-4 my-space'>
+            <form class='Login'>
+                <h2 class="form-header">Please Sign in</h2>
+                <label for = "SignEmail" class = 'sr-only'> Email Address </label>
+                <input type="email" id ='SignEmail' class="form-control ourInput"placeholder='Email Address'required autofocus/>
+                <label for = 'inputPassword'  class = 'sr-only'> Password</label>
+                <input type ='password' id = 'inputPassword' class = 'form-control ourInput' placeholder ='password' required/>
+                <button class  ='btn btn-switch' ref="index.html" type= ="submit">sign-in</button>
+                <p>Don't have an account? </p>
+                <a href="sign-up.html">sign-up here</a>
+            </form>
+        </div>
+
+
+  </body>
+
+</html>
