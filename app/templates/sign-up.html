@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <title>sign-up  </title>
+        <meta charset="utf-8">
+        <meta name ="viewport" content = 'width=device-width, initial-1 =1'>
+        <link href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel='stylesheet'>
+        <link href = 'main.css' rel = 'stylesheet' type = 'text/css'>
+
+    </head>
+    <body>
+    {% from "_formhelper.html" import render_field %}
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+      <a class="navbar-brand" href="#"  style="color:#ffa500;">Yummy Recipes</a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item">
+             <a class="nav-link" href="index.html">About</a>
+             </li>
+             <li class="nav-item">
+             <a class="nav-link" href="index.html">Login</a>
+            </li>
+        </ul>
+      </div>
+  </nav>
+    <div class="text">
+            <span class="border">
+                Yummy Recipes
+            </span>
+    </div>
+        <div class = 'col-sm-4 my-space'>
+            <form class='Signup', method="POST",  action="">
+                <h2 class="form-header">Please Sign Up</h2>
+                <div class = 'form-group'>
+                {{render_field(form.First_name, class_= 'form_control')}}
+                </div>
+                <div class = 'form-group'>
+                {{render_field(form.Last_name, class_= 'form_control')}}
+                </div>
+                <div class = 'form-group'>
+                {{render_field(form.Email, class_= 'form_control')}}
+                </div>
+                <div class = 'form-group'>
+                {{render_field(form.Password, class_= 'form_control')}}
+                </div>
+                <div class = 'form-group'>
+                {{render_field(form.Confirm, class_= 'form_control')}}
+                </div>
+                <button class  ='btn btn-switch' type= ="submit">signup</button>
+
+        </form>
+        </div>
+     </body>
